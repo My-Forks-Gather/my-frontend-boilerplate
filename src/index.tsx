@@ -6,7 +6,7 @@ import { Route, Switch } from 'react-router-dom'
 import { history, store } from 'src/modules'
 import * as routes from 'src/routes'
 
-const App = () => (
+const App: React.SFC = () => (
   <Provider store={store}>
     <ConnectedRouter history={history}>
       <Switch>
