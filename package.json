@@ -1,6 +1,75 @@
 {
   "name": "boilerplate-frontend-react-redux-typescript-webpack",
   "version": "1.0.0",
-  "main": "index.js",
-  "license": "MIT"
+  "main": "src/index.tsx",
+  "license": "MIT",
+  "author": "ymkz",
+  "homepage": "https://github.com/ymkz/boilerplate-frontend-react-redux-typescript-webpack",
+  "description": "A boilerplate application for front-end with react, redux, typescript and webpack.",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ymkz/boilerplate-frontend-react-redux-typescript-webpack"
+  },
+  "bugs": {
+    "url": "https://github.com/ymkz/boilerplate-frontend-react-redux-typescript-webpack/issues"
+  },
+  "scripts": {
+    "start": "webpack-serve --config webpack.config.dev.js",
+    "build": "webpack --config webpack.config.prod.js",
+    "lint": "tslint --project .",
+    "lint:fix": "tslint --fix --project .",
+    "typecheck": "tsc --noEmit"
+  },
+  "commitlint": {
+    "extends": [
+      "@commitlint/config-conventional"
+    ]
+  },
+  "husky": {
+    "hooks": {
+      "commit-msg": "commitlint --edit $GIT_PARAMS",
+      "pre-commit": "yarn lint && yarn typecheck"
+    }
+  },
+  "dependencies": {
+    "loadable-components": "^2.2.2",
+    "react": "^16.4.1",
+    "react-dom": "^16.4.1",
+    "react-redux": "^5.0.7",
+    "react-router-dom": "^4.3.1",
+    "redux": "^4.0.0",
+    "styled-components": "^3.3.3",
+    "typeful-redux": "^0.3.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.0.0-beta.54",
+    "@babel/plugin-syntax-dynamic-import": "^7.0.0-beta.54",
+    "@babel/preset-env": "^7.0.0-beta.54",
+    "@babel/preset-react": "^7.0.0-beta.54",
+    "@babel/preset-typescript": "^7.0.0-beta.54",
+    "@commitlint/cli": "^7.0.0",
+    "@commitlint/config-conventional": "^7.0.1",
+    "@types/react": "^16.4.6",
+    "@types/react-dom": "^16.0.6",
+    "@types/react-loadable": "^5.4.0",
+    "@types/react-router-dom": "^4.2.7",
+    "babel-loader": "^8.0.0-beta.4",
+    "babel-plugin-module-resolver": "^3.1.1",
+    "connect-history-api-fallback": "^1.5.0",
+    "copy-webpack-plugin": "^4.5.2",
+    "css-loader": "^1.0.0",
+    "file-loader": "^1.1.11",
+    "html-webpack-plugin": "^3.2.0",
+    "koa-connect": "^2.0.1",
+    "mini-css-extract-plugin": "^0.4.1",
+    "prettier": "^1.13.7",
+    "tslint": "^5.11.0",
+    "tslint-config-prettier": "^1.13.0",
+    "tslint-plugin-prettier": "^1.3.0",
+    "typescript": "^2.9.2",
+    "webpack": "^4.16.1",
+    "webpack-command": "^0.4.1",
+    "webpack-serve": "^2.0.2",
+    "webpack-stylish": "^0.1.8"
+  }
 }
