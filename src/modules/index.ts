@@ -16,6 +16,5 @@ export const history = createBrowserHistory()
 
 export const store = createStore(
   connectRouter(history)(reducers),
-  undefined,
   composeWithDevTools(applyMiddleware(routerMiddleware(history)))
 )
