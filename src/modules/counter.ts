@@ -7,7 +7,7 @@ export interface CounterState {
   count: number
 }
 
-const initialState: CounterState = {
+export const counterInitialState: CounterState = {
   count: 0
 }
 
@@ -21,8 +21,8 @@ export const counterAction = {
 
 export type CounterAction = typeof counterAction
 
-export const counterReducer = reducerWithInitialState(initialState)
-  .case(counterAction.reset, () => initialState)
+export const counterReducer = reducerWithInitialState(counterInitialState)
+  .case(counterAction.reset, () => counterInitialState)
   .case(counterAction.inc, state => ({
     ...state,
     count: state.count + 1

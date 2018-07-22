@@ -10,7 +10,7 @@ const App: React.SFC = () => (
   <Provider store={store}>
     <ConnectedRouter history={history}>
       <Switch>
-        <Route exact path="/" component={routes.Counter} />
+        <Route exact={true} path="/" component={routes.Counter} />
         <Route render={routes.NotFoundRedirectToRoot} />
       </Switch>
     </ConnectedRouter>

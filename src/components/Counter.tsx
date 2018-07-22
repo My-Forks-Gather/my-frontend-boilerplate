@@ -9,7 +9,7 @@ interface Props {
   action: CounterAction
 }
 
-const Counter: React.SFC<Props> = props => (
+export const Counter: React.SFC<Props> = props => (
   <React.Fragment>
     <div>count: {props.counter.count}</div>
     <button onClick={() => props.action.inc()}>inc</button>
