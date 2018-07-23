@@ -1,7 +1,7 @@
 const path = require('path')
-const PluginCopy = require('copy-webpack-plugin')
-const PluginHtml = require('html-webpack-plugin')
-const PluginCss = require('mini-css-extract-plugin')
+const CopyPlugin = require('copy-webpack-plugin')
+const HTMLPlugin = require('html-webpack-plugin')
+const ExtractCSSPlugin = require('mini-css-extract-plugin')
 
 module.exports = {
   mode: 'production',
@@ -13,6 +13,9 @@ module.exports = {
     publicPath: '/'
   },
   resolve: {
+    alias: {
+      src: path.resolve(__dirname, 'src')
+    },
     extensions: ['.ts', '.tsx', '.js', '.json']
   },
   module: {
@@ -20,11 +23,11 @@ module.exports = {
       {
         exclude: /node_modules/,
         test: /\.(ts|tsx)$/,
-        use: 'babel-loader'
+        use: 'ts-loader'
       },
       {
         test: /\.css$/,
-        use: [{ loader: PluginCss.loader }, 'css-loader']
+        use: [ExtractCSSPlugin.loader, 'css-loader']
       },
       {
         test: /\.(png|jpg|jpeg|gif|ttf|otf|woff)$/,
@@ -39,9 +42,9 @@ module.exports = {
     }
   },
   plugins: [
-    new PluginCss(),
-    new PluginCopy(['public']),
-    new PluginHtml({
+    new ExtractCSSPlugin(),
+    new CopyPlugin(['public']),
+    new HTMLPlugin({
       minify: true,
       template: path.resolve(__dirname, 'src/index.html')
     })
