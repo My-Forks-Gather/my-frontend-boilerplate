@@ -6,7 +6,7 @@ const ExtractCSSPlugin = require('mini-css-extract-plugin')
 const config = {
   mode: 'development',
   stats: 'none',
-  devtool: 'eval-cheap-module-source-map',
+  devtool: '#eval-cheap-module-source-map',
   entry: path.resolve(__dirname, 'src'),
   output: {
     filename: '[name].bundle.js',
@@ -17,7 +17,7 @@ const config = {
     alias: {
       src: path.resolve(__dirname, 'src')
     },
-    extensions: ['.ts', '.tsx', '.js', '.json']
+    extensions: ['.ts', '.tsx', '.js']
   },
   module: {
     rules: [

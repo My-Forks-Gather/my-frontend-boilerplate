@@ -5,7 +5,6 @@ const ExtractCSSPlugin = require('mini-css-extract-plugin')
 
 module.exports = {
   mode: 'production',
-  devtool: false,
   entry: path.resolve(__dirname, 'src'),
   output: {
     filename: '[name].bundle.js',
@@ -16,7 +15,7 @@ module.exports = {
     alias: {
       src: path.resolve(__dirname, 'src')
     },
-    extensions: ['.ts', '.tsx', '.js', '.json']
+    extensions: ['.ts', '.tsx', '.js']
   },
   module: {
     rules: [
