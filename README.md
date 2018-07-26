@@ -16,7 +16,7 @@
 
 ## Pre-requirements
 
-- mkcert (for generate https certification file on localhost **if you were required**)
+- mkcert (for generate https certification file on localhost **if you were needed**)
   - `mkcert localhost`
   - if not exist file, skip certification and start with `http://localhost`
 
@@ -29,3 +29,6 @@
 - CSS in JS (styled-components)
 - Webpack
 - Absolute path import
+- Jest
+- TSLint
+- Prettier
