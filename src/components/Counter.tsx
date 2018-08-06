@@ -1,8 +1,8 @@
 import * as React from 'react'
 import { connect } from 'react-redux'
 import { bindActionCreators, Dispatch } from 'redux'
-import { Store } from 'src/modules'
-import { counterAction, TypeCounterAction, TypeCounterState } from 'src/modules/counter'
+import { Store } from 'src/store'
+import { counterAction, TypeCounterAction, TypeCounterState } from 'src/store/counter'
 
 interface Props {
   action: TypeCounterAction

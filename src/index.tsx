@@ -3,8 +3,8 @@ import * as React from 'react'
 import * as ReactDOM from 'react-dom'
 import { Provider } from 'react-redux'
 import { Route, Switch } from 'react-router-dom'
-import { history, store } from 'src/modules'
 import * as routes from 'src/routes'
+import { history, store } from 'src/store'
 
 const App: React.SFC = () => (
   <Provider store={store}>

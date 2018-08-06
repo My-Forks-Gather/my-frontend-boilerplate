@@ -1,7 +1,7 @@
 import { shallow } from 'enzyme'
 import * as React from 'react'
 import { Counter } from 'src/components/Counter'
-import { counterAction, counterInitialState } from 'src/modules/counter'
+import { counterAction, counterInitialState } from 'src/store/counter'
 
 describe('components/Counter', () => {
   test('Rendered <Counter />', () => {
