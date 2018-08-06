@@ -2,10 +2,10 @@ import { connectRouter, routerMiddleware } from 'connected-react-router'
 import { createBrowserHistory } from 'history'
 import { applyMiddleware, combineReducers, createStore } from 'redux'
 import { composeWithDevTools } from 'redux-devtools-extension'
-import { counterReducer, CounterState } from 'src/modules/counter'
+import { counterReducer, CounterStateType } from 'src/modules/counter'
 
-export interface Store {
-  counter: CounterState
+export interface StoreType {
+  counter: CounterStateType
 }
 
 const reducers = combineReducers({

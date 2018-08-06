@@ -3,11 +3,11 @@ import { reducerWithInitialState } from 'typescript-fsa-reducers'
 
 const actionCreator = actionCreatorFactory('counter')
 
-export interface CounterState {
+export interface CounterStateType {
   count: number
 }
 
-export const counterInitialState: CounterState = {
+export const counterInitialState: CounterStateType = {
   count: 0
 }
 
@@ -19,7 +19,7 @@ export const counterAction = {
   minus: actionCreator<number>('MINUS')
 }
 
-export type CounterAction = typeof counterAction
+export type CounterActionType = typeof counterAction
 
 export const counterReducer = reducerWithInitialState(counterInitialState)
   .case(counterAction.reset, () => counterInitialState)
