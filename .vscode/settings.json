@@ -3,7 +3,6 @@
   "path-autocomplete.pathMappings": {
     "src": "${folder}/src"
   },
-  "tslint.autoFixOnSave": true,
   "tslint.enable": true,
   "tslint.packageManager": "yarn"
 }

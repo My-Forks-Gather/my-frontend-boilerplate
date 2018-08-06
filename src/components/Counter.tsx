@@ -5,8 +5,8 @@ import { Store } from 'src/modules'
 import { counterAction, TypeCounterAction, TypeCounterState } from 'src/modules/counter'
 
 interface Props {
-  counter: TypeCounterState
   action: TypeCounterAction
+  counter: TypeCounterState
 }
 
 export const Counter: React.SFC<Props> = props => (
