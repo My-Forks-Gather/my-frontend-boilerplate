@@ -1,12 +1,12 @@
 import * as React from 'react'
 import { connect } from 'react-redux'
 import { bindActionCreators, Dispatch } from 'redux'
-import { StoreType } from 'src/modules'
-import { counterAction, CounterActionType, CounterStateType } from 'src/modules/counter'
+import { Store } from 'src/modules'
+import { counterAction, TypeCounterAction, TypeCounterState } from 'src/modules/counter'
 
 interface Props {
-  counter: CounterStateType
-  action: CounterActionType
+  counter: TypeCounterState
+  action: TypeCounterAction
 }
 
 export const Counter: React.SFC<Props> = props => (
@@ -20,7 +20,7 @@ export const Counter: React.SFC<Props> = props => (
   </React.Fragment>
 )
 
-const mapStateToProps = (state: StoreType) => ({
+const mapStateToProps = (state: Store) => ({
   counter: state.counter
 })
 
