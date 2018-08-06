@@ -24,7 +24,7 @@ const config = {
       {
         exclude: /node_modules/,
         test: /\.(ts|tsx)$/,
-        use: 'ts-loader'
+        use: 'babel-loader'
       },
       {
         test: /\.css$/,
