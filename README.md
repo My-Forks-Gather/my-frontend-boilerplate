@@ -3,21 +3,27 @@
 <h5 align="center">A boilerplate application for front-end with react, redux, typescript and webpack.</h5>
 
 <p align="center">
-  <a href="https://circleci.com/gh/ymkz/portfolio">
-    <img alt="CircleCI" src="https://img.shields.io/circleci/project/github/ymkz/boilerplate-frontend-react-redux-typescript-webpack.svg?style=flat-square">
+  <a href="https://circleci.com/gh/ymkz/boilerplate-frontend-react-redux-typescript-webpack">
+    <img alt="CircleCI" src="https://flat.badgen.net/circleci/github/ymkz/boilerplate-frontend-react-redux-typescript-webpack">
+  </a>
+  <a href="https://github.com/palantir/tslint">
+    <img alt="TSLint" src="https://flat.badgen.net/badge/lint%20with/tslint/cyan">
   </a>
   <a href="https://github.com/prettier/prettier">
-    <img alt="Prettier" src="https://img.shields.io/badge/code_style-prettier-ff69b4.svg?style=flat-square">
+    <img alt="Prettier" src="https://flat.badgen.net/badge/format%20with/prettier/ff69b4">
   </a>
   <a href="https://github.com/styled-components/styled-components">
-    <img alt="styled-components" src="https://img.shields.io/badge/style-%F0%9F%92%85%20styled--components-orange.svg?style=flat-square">
+    <img alt="styled-components" src="https://flat.badgen.net/badge/styled%20with/styled-components/orange">
   </a>
   <a href="https://github.com/facebook/jest">
-    <img alt="Jest" src="https://img.shields.io/badge/tested_with-jest-99424f.svg?style=flat-square">
+    <img alt="Jest" src="https://flat.badgen.net/badge/tested%20with/jest/99424f">
+  </a>
+  <a href="https://github.com/facebook/jest">
+    <img alt="TypeScript" src="https://flat.badgen.net/badge/TypeScript/3.0.1">
   </a>
 </p>
 
-## Pre-requirements
+## Optional-requirements
 
 - mkcert (for generate https certification file on localhost **if you were needed**)
   - `mkcert localhost`
@@ -28,10 +34,9 @@
 - React
 - Redux
 - TypeScript
-- Component Lazy Load (loadable-components)
+- Code Splitting (react-loadable)
 - CSS in JS (styled-components)
 - Webpack
-- Absolute path import
 - Jest
 - TSLint
 - Prettier
