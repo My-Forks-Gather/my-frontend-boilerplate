@@ -2,9 +2,9 @@
   "compilerOptions": {
     "allowSyntheticDefaultImports": true,
     "baseUrl": ".",
-    "declaration": false,
+    "declaration": true,
     "esModuleInterop": true,
-    "jsx": "react",
+    "jsx": "preserve",
     "lib": ["dom", "esnext"],
     "module": "esnext",
     "moduleResolution": "node",
