@@ -4,7 +4,7 @@ import { Redirect } from 'react-router-dom'
 
 export const Counter = Loadable({
   loader: () => import('src/components/Counter'),
-  loading: () => <div>loading</div>
+  loading: () => null
 })
 
 export const NotFoundRedirectToRoot = () => <Redirect to="/" />
