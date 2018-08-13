@@ -6,6 +6,9 @@
   <a href="https://circleci.com/gh/ymkz/boilerplate-frontend-react-redux-typescript-webpack">
     <img alt="CircleCI" src="https://flat.badgen.net/circleci/github/ymkz/boilerplate-frontend-react-redux-typescript-webpack">
   </a>
+  <a href="https://github.com/Microsoft/TypeScript">
+    <img alt="TypeScript" src="https://flat.badgen.net/badge/write with/TypeScript/294E80">
+  </a>
   <a href="https://github.com/palantir/tslint">
     <img alt="TSLint" src="https://flat.badgen.net/badge/lint%20with/tslint/cyan">
   </a>
@@ -17,9 +20,6 @@
   </a>
   <a href="https://github.com/facebook/jest">
     <img alt="Jest" src="https://flat.badgen.net/badge/tested%20with/jest/99424f">
-  </a>
-  <a href="https://github.com/facebook/jest">
-    <img alt="TypeScript" src="https://flat.badgen.net/badge/TypeScript/3.0.1">
   </a>
 </p>
 
