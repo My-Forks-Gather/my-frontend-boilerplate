@@ -3,6 +3,7 @@ import * as React from 'react'
 import * as ReactDOM from 'react-dom'
 import { Provider } from 'react-redux'
 import { Route, Switch } from 'react-router-dom'
+import 'src/registerServiceWorker'
 import * as routes from 'src/routes'
 import { history, store } from 'src/store'
 
