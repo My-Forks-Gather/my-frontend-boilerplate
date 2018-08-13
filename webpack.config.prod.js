@@ -1,6 +1,7 @@
 const path = require('path')
 const CopyPlugin = require('copy-webpack-plugin')
 const HTMLPlugin = require('html-webpack-plugin')
+const CleanPlugin = require('clean-webpack-plugin')
 const ExtractCSSPlugin = require('mini-css-extract-plugin')
 const WorkboxPlugin = require('workbox-webpack-plugin')
 
@@ -8,7 +9,7 @@ module.exports = {
   mode: 'production',
   entry: path.resolve(__dirname, 'src'),
   output: {
-    filename: '[name].bundle.js',
+    filename: '[name]-[hash].bundle.js',
     path: path.resolve(__dirname, 'build'),
     publicPath: '/'
   },
@@ -42,6 +43,7 @@ module.exports = {
     }
   },
   plugins: [
+    new CleanPlugin(['build']),
     new ExtractCSSPlugin(),
     new CopyPlugin(['public']),
     new HTMLPlugin({
