@@ -25,7 +25,7 @@
 
 ## Optional-requirements
 
-- mkcert (for generate https certification file on localhost **if you were needed**)
+- mkcert (for generate https certification file on localhost **if need**)
   - `mkcert localhost`
   - if not exist file, skip certification and start with `http://localhost`
 
