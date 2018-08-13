@@ -2,6 +2,7 @@ const path = require('path')
 const CopyPlugin = require('copy-webpack-plugin')
 const HTMLPlugin = require('html-webpack-plugin')
 const ExtractCSSPlugin = require('mini-css-extract-plugin')
+const WorkboxPlugin = require('workbox-webpack-plugin')
 
 module.exports = {
   mode: 'production',
@@ -46,6 +47,7 @@ module.exports = {
     new HTMLPlugin({
       minify: true,
       template: path.resolve(__dirname, 'src/index.html')
-    })
+    }),
+    new WorkboxPlugin.GenerateSW()
   ]
 }

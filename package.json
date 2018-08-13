@@ -93,6 +93,7 @@
     "webpack": "4.16.5",
     "webpack-command": "0.4.1",
     "webpack-serve": "2.0.2",
-    "webpack-stylish": "0.1.8"
+    "webpack-stylish": "0.1.8",
+    "workbox-webpack-plugin": "^3.4.1"
   }
 }
