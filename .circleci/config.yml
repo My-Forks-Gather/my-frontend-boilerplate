@@ -8,8 +8,8 @@ jobs:
       - checkout
       - restore_cache:
           keys:
-          - dependencies-{{ checksum "yarn.lock" }}
-          - dependencies-
+            - dependencies-{{ checksum "yarn.lock" }}
+            - dependencies-
       - run:
           name: Install packages
           command: yarn install
@@ -25,4 +25,4 @@ jobs:
           command: yarn typecheck
       - run:
           name: Unit test
-          command: yarn test
+          command: yarn test:ci
