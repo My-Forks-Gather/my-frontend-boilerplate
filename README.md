@@ -21,6 +21,9 @@
   <a href="https://github.com/facebook/jest">
     <img alt="Jest" src="https://flat.badgen.net/badge/tested%20with/jest/99424f">
   </a>
+  <a href="https://codecov.io/gh/ymkz/boilerplate-frontend-react-redux-typescript-webpack">
+    <img alt="Codecov" src="https://flat.badgen.net/codecov/c/github/ymkz/boilerplate-frontend-react-redux-typescript-webpack">
+  </a>
 </p>
 
 ## Optional-requirements
