@@ -3,7 +3,7 @@ import * as React from 'react'
 import { Counter } from 'src/components/Counter'
 import { counterAction, counterInitialState } from 'src/store/counter'
 
-describe('components/Counter', () => {
+describe('src/components/Counter', () => {
   test('Rendered <Counter />', () => {
     shallow(<Counter counter={counterInitialState} action={counterAction} />)
   })
