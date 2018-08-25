@@ -1,6 +1,9 @@
 version: 2
 jobs:
   build:
+    branches:
+      ignore:
+        - master
     docker:
       - image: circleci/node:10.6-browsers
     working_directory: ~/workspace
@@ -22,7 +25,7 @@ jobs:
           command: yarn lint
       - run:
           name: Type check
-          command: yarn typecheck
+          command: yarn type
       - run:
           name: Unit test
           command: yarn test:ci

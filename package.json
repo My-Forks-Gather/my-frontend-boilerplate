@@ -23,8 +23,8 @@
     "codecov": "codecov",
     "lint": "tslint --project .",
     "lint:fix": "tslint --fix --project .",
-    "typecheck": "tsc --noEmit",
-    "precommit": "run-p lint typecheck test"
+    "type": "tsc --noEmit",
+    "lazy": "run-p lint type test"
   },
   "commitlint": {
     "extends": [
@@ -34,7 +34,7 @@
   "husky": {
     "hooks": {
       "commit-msg": "commitlint --edit $GIT_PARAMS",
-      "pre-commit": "yarn precommit"
+      "pre-commit": "yarn lazy"
     }
   },
   "dependencies": {
