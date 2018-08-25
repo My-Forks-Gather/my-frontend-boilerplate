@@ -1,9 +1,6 @@
 version: 2
 jobs:
   build:
-    branches:
-      ignore:
-        - master
     docker:
       - image: circleci/node:10.6-browsers
     working_directory: ~/workspace
