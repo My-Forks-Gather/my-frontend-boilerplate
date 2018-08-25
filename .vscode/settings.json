@@ -1,5 +1,6 @@
 {
   "editor.formatOnSave": true,
+  "markdown.preview.breaks": true,
   "path-autocomplete.pathMappings": {
     "src": "${folder}/src"
   },
