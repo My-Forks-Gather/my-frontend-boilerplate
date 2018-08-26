@@ -1,10 +1,10 @@
-<h1 align="center">boilerplate-frontend-react-redux-typescript-webpack</h1>
+<h1 align="center">my-frontend-boilerplate</h1>
 
 <h5 align="center">A boilerplate application for front-end with react, redux, typescript and webpack.</h5>
 
 <p align="center">
-  <a href="https://circleci.com/gh/ymkz/boilerplate-frontend-react-redux-typescript-webpack">
-    <img alt="CircleCI" src="https://flat.badgen.net/circleci/github/ymkz/boilerplate-frontend-react-redux-typescript-webpack">
+  <a href="https://circleci.com/gh/ymkz/my-frontend-boilerplate">
+    <img alt="CircleCI" src="https://flat.badgen.net/circleci/github/ymkz/my-frontend-boilerplate">
   </a>
   <a href="https://github.com/Microsoft/TypeScript">
     <img alt="TypeScript" src="https://flat.badgen.net/badge/write with/TypeScript/294E80">
@@ -21,8 +21,8 @@
   <a href="https://github.com/facebook/jest">
     <img alt="Jest" src="https://flat.badgen.net/badge/tested%20with/jest/99424f">
   </a>
-  <a href="https://codecov.io/gh/ymkz/boilerplate-frontend-react-redux-typescript-webpack">
-    <img alt="Codecov" src="https://flat.badgen.net/codecov/c/github/ymkz/boilerplate-frontend-react-redux-typescript-webpack">
+  <a href="https://codecov.io/gh/ymkz/my-frontend-boilerplate">
+    <img alt="Codecov" src="https://flat.badgen.net/codecov/c/github/ymkz/my-frontend-boilerplate">
   </a>
 </p>
 

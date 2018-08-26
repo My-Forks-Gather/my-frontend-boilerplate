@@ -1,18 +1,18 @@
 {
   "private": true,
-  "name": "boilerplate-frontend-react-redux-typescript-webpack",
+  "name": "my-frontend-boilerplate",
   "version": "1.0.0",
   "main": "src/index.tsx",
   "license": "MIT",
   "author": "ymkz",
-  "homepage": "https://github.com/ymkz/boilerplate-frontend-react-redux-typescript-webpack",
+  "homepage": "https://github.com/ymkz/my-frontend-boilerplate",
   "description": "A boilerplate application for front-end with react, redux, typescript and webpack.",
   "repository": {
     "type": "git",
-    "url": "https://github.com/ymkz/boilerplate-frontend-react-redux-typescript-webpack"
+    "url": "https://github.com/ymkz/my-frontend-boilerplate"
   },
   "bugs": {
-    "url": "https://github.com/ymkz/boilerplate-frontend-react-redux-typescript-webpack/issues"
+    "url": "https://github.com/ymkz/my-frontend-boilerplate/issues"
   },
   "scripts": {
     "start": "webpack-serve --config webpack.config.dev.js",
