@@ -2,6 +2,7 @@ const path = require('path')
 const StylishPlugin = require('webpack-stylish')
 const HTMLPlugin = require('html-webpack-plugin')
 const ExtractCSSPlugin = require('mini-css-extract-plugin')
+const BuildNotifierPlugin = require('webpack-build-notifier')
 
 const config = {
   mode: 'development',
@@ -14,9 +15,6 @@ const config = {
     publicPath: '/'
   },
   resolve: {
-    alias: {
-      src: path.resolve(__dirname, 'src')
-    },
     extensions: ['.ts', '.tsx', '.js']
   },
   module: {
@@ -41,6 +39,9 @@ const config = {
     new ExtractCSSPlugin(),
     new HTMLPlugin({
       template: path.resolve(__dirname, 'src/index.html')
+    }),
+    new BuildNotifierPlugin({
+      suppressSuccess: true
     })
   ]
 }
