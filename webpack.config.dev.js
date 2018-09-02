@@ -25,6 +25,10 @@ const config = {
         use: 'babel-loader'
       },
       {
+        test: /\/src\/components\/pages\/.+(ts|tsx)$/,
+        loader: 'react-hot-loader-loader'
+      },
+      {
         test: /\.css$/,
         use: [ExtractCSSPlugin.loader, 'css-loader']
       },
