@@ -4,15 +4,15 @@ import * as ReactDOM from 'react-dom'
 import { Provider } from 'react-redux'
 import { Route, Switch } from 'react-router-dom'
 import 'src/registerServiceWorker'
-import * as routes from 'src/routes'
+import * as Routes from 'src/routes'
 import { history, store } from 'src/store'
 
 const App = () => (
   <Provider store={store}>
     <ConnectedRouter history={history}>
       <Switch>
-        <Route exact={true} path="/" component={routes.Counter} />
-        <Route render={routes.NotFoundRedirectToRoot} />
+        <Route exact={true} path="/" component={Routes.Counter} />
+        <Route render={Routes.NotFoundRedirectToRoot} />
       </Switch>
     </ConnectedRouter>
   </Provider>
