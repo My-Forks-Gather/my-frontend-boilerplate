@@ -4584,7 +4584,7 @@ load-json-file@^4.0.0:
     pify "^3.0.0"
     strip-bom "^3.0.0"
 
-loadable-components@^2.2.3:
+loadable-components@2.2.3:
   version "2.2.3"
   resolved "https://registry.yarnpkg.com/loadable-components/-/loadable-components-2.2.3.tgz#6fd1e02cc3716f6dbbd885a90d2bb36bf19cd7e1"
   dependencies:
@@ -5998,11 +5998,11 @@ react-dom@16.4.2:
     object-assign "^4.1.1"
     prop-types "^15.6.0"
 
-react-hot-loader-loader@^0.0.6:
+react-hot-loader-loader@0.0.6:
   version "0.0.6"
   resolved "https://registry.yarnpkg.com/react-hot-loader-loader/-/react-hot-loader-loader-0.0.6.tgz#f707c538910bebac920a5e550049399c6ff26b23"
 
-react-hot-loader@^4.3.5:
+react-hot-loader@4.3.5:
   version "4.3.5"
   resolved "https://registry.yarnpkg.com/react-hot-loader/-/react-hot-loader-4.3.5.tgz#d8659839d8072d4b78938a776f29f5f1d2a40170"
   dependencies:
@@ -7499,7 +7499,7 @@ webidl-conversions@^4.0.2:
   version "4.0.2"
   resolved "https://registry.yarnpkg.com/webidl-conversions/-/webidl-conversions-4.0.2.tgz#a855980b1f0b6b359ba1d5d9fb39ae941faa63ad"
 
-webpack-build-notifier@^0.1.29:
+webpack-build-notifier@0.1.29:
   version "0.1.29"
   resolved "https://registry.yarnpkg.com/webpack-build-notifier/-/webpack-build-notifier-0.1.29.tgz#d71f89bb94346c6b748e07aa3d117d2beb0a151f"
   dependencies:
