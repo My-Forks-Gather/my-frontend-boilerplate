@@ -6036,9 +6036,9 @@ react-hot-loader-loader@0.0.6:
   version "0.0.6"
   resolved "https://registry.yarnpkg.com/react-hot-loader-loader/-/react-hot-loader-loader-0.0.6.tgz#f707c538910bebac920a5e550049399c6ff26b23"
 
-react-hot-loader@4.3.10:
-  version "4.3.10"
-  resolved "https://registry.yarnpkg.com/react-hot-loader/-/react-hot-loader-4.3.10.tgz#10290b4a554cd91d2684a94724aa3a70e002007a"
+react-hot-loader@4.3.11:
+  version "4.3.11"
+  resolved "https://registry.yarnpkg.com/react-hot-loader/-/react-hot-loader-4.3.11.tgz#fe5cf7be7700c249b58293f977c1e6e0900f0d87"
   dependencies:
     fast-levenshtein "^2.0.6"
     global "^4.3.0"
